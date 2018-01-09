@@ -1,3 +1,8 @@
 package com.pablovfds.tutorialandroidkotlin.data.models
 
-data class Movie constructor(var title: String, var year: String, var poster: String)
+import com.google.gson.annotations.SerializedName
+
+data class Movie constructor(
+        @SerializedName("Title") var title: String,
+        @SerializedName("Year") var year: String,
+        @SerializedName("Poster") var poster: String)
